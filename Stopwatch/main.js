@@ -13,7 +13,7 @@ startButton.addEventListener("click", start);
 stopButton.addEventListener("click", stop);
 resetButton.addEventListener("click", reset);
 
-function start() {
+const start = () => {
   clearInterval(intervalId);
   intervalId = setInterval(() => {
     time++;
@@ -26,20 +26,20 @@ function start() {
     secondsLabel.textContent = seconds;
     millisecondsLabel.textContent = milliseconds;
   }, 10);
-}
+};
 
-function stop() {
+const stop = () => {
   clearInterval(intervalId);
-}
+};
 
-function reset() {
+const reset = () => {
   stop();
   time = 0;
 
   minutesLabel.textContent = "00";
   secondsLabel.textContent = "00";
   millisecondsLabel.textContent = "00";
-}
+};
 
 function pad(number) {
   return number.toString().padStart(2, "0");
