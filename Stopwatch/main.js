@@ -6,6 +6,13 @@ const minutesLabel = document.getElementById("minutes");
 const secondsLabel = document.getElementById("seconds");
 const millisecondsLabel = document.getElementById("milliseconds");
 
+document.addEventListener("DOMContentLoaded", function () {
+  const backButton = document.getElementById("back-button");
+  backButton.addEventListener("click", function () {
+    window.location.href = "../index.html";
+  });
+});
+
 let intervalId;
 let time = 0;
 
