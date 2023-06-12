@@ -45,6 +45,6 @@ function pad(number) {
 document.addEventListener("DOMContentLoaded", function () {
   const backButton = document.getElementById("back-button");
   backButton.addEventListener("click", function () {
-    window.location.href = "../"; // replace with the path to your home page if it's different
+    window.location.href = "../";
   });
 });

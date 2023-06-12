@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Todo List</title>
+  </head>
+  <body>
+    <button id="back-button">Back to Projects</button>
+
+    <h1>Todo</h1>
+    <form id="form">
+      <input
+        type="text"
+        class="input"
+        id="input"
+        placeholder="Enter your Todo"
+        autocomplete="off"
+      />
+
+      <ul class="todos" id="todos"></ul>
+    </form>
+    <small
+      >left click to toggle completed <br />Right click to delete todo
+    </small>
+
+    <script src="todo.js"></script>
+  </body>
+</html>
