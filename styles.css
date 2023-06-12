@@ -61,6 +61,14 @@ nav ul li {
     align-items: center;
 }
 
+.project-box .image-container img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-box .image-container:hover img {
+    transform: scale(1.1); /* Scale up to 110% */
+}
+
 .image-container img {
     max-width: 100%;
     height: auto;
