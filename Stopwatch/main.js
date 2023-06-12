@@ -1,53 +1,50 @@
-const startButton = document.getElementById("start");
-const stopButton = document.getElementById("stop");
-const resetButton = document.getElementById("reset");
+let interval;
+let started = false;
+let time = { minutes: 0, seconds: 0, milliseconds: 0 };
 
-const minutesLabel = document.getElementById("minutes");
-const secondsLabel = document.getElementById("seconds");
-const millisecondsLabel = document.getElementById("milliseconds");
-
-document.addEventListener("DOMContentLoaded", function () {
-  const backButton = document.getElementById("back-button");
-  backButton.addEventListener("click", function () {
-    window.location.href = "../index.html";
-  });
+document.getElementById("start").addEventListener("click", function () {
+  if (!started) {
+    interval = setInterval(startTimer, 10);
+    started = true;
+  }
 });
 
-let intervalId;
-let time = 0;
+document.getElementById("stop").addEventListener("click", function () {
+  clearInterval(interval);
+  started = false;
+});
 
-startButton.addEventListener("click", start);
-stopButton.addEventListener("click", stop);
-resetButton.addEventListener("click", reset);
+document.getElementById("reset").addEventListener("click", function () {
+  clearInterval(interval);
+  started = false;
+  time = { minutes: 0, seconds: 0, milliseconds: 0 };
+  document.getElementById("minutes").textContent = "00";
+  document.getElementById("seconds").textContent = "00";
+  document.getElementById("milliseconds").textContent = "00";
+});
 
-const start = () => {
-  clearInterval(intervalId);
-  intervalId = setInterval(() => {
-    time++;
-
-    const milliseconds = pad(time % 100);
-    const seconds = pad(Math.floor(time / 100) % 60);
-    const minutes = pad(Math.floor(time / 6000));
-
-    minutesLabel.textContent = minutes;
-    secondsLabel.textContent = seconds;
-    millisecondsLabel.textContent = milliseconds;
-  }, 10);
-};
-
-const stop = () => {
-  clearInterval(intervalId);
-};
-
-const reset = () => {
-  stop();
-  time = 0;
-
-  minutesLabel.textContent = "00";
-  secondsLabel.textContent = "00";
-  millisecondsLabel.textContent = "00";
-};
+function startTimer() {
+  time.milliseconds++;
+  if (time.milliseconds >= 100) {
+    time.seconds++;
+    time.milliseconds = 0;
+  }
+  if (time.seconds >= 60) {
+    time.minutes++;
+    time.seconds = 0;
+  }
+  document.getElementById("minutes").textContent = pad(time.minutes);
+  document.getElementById("seconds").textContent = pad(time.seconds);
+  document.getElementById("milliseconds").textContent = pad(time.milliseconds);
+}
 
 function pad(number) {
   return number.toString().padStart(2, "0");
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const backButton = document.getElementById("back-button");
+  backButton.addEventListener("click", function () {
+    window.location.href = "../"; // replace with the path to your home page if it's different
+  });
+});
