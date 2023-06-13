@@ -41,10 +41,3 @@ function startTimer() {
 function pad(number) {
   return number.toString().padStart(2, "0");
 }
-
-document.addEventListener("DOMContentLoaded", function () {
-  const backButton = document.getElementById("back-button");
-  backButton.addEventListener("click", function () {
-    window.location.href = "../";
-  });
-});
