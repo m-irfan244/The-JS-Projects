@@ -1,0 +1,15 @@
+#text-to-type {
+    font-size: 1.5em;
+    margin: 20px;
+}
+
+#user-input {
+    width: 80%;
+    height: 100px;
+}
+
+#reset-button {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 1em;
+}

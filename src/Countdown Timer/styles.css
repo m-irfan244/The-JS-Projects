@@ -1,0 +1,10 @@
+#timer {
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+#start-button {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 1em;
+}
