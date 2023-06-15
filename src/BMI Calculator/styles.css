@@ -1,0 +1,26 @@
+body {
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.bmi-form {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.bmi-form input,
+.bmi-form button {
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.bmi-form button {
+    cursor: pointer;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+}

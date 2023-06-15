@@ -2,20 +2,23 @@
 
 This is the main repository for all of the projects.
 
--   [Live Webiste](https://ts-devs.github.io/250-js-projects/)
+- [Live Webiste](https://ts-devs.github.io/250-js-projects/)
 
+|  #  | Project                                                                                                   | Live Demo                                                                                      |
+| :-: | --------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| 01  | [Stopwatch](https://github.com/TS-Devs/250-js-projects/tree/main/src/Stopwatch)                           | [Live Demo](https://ts-devs.github.io/250-js-projects/src/Stopwatch/index.html)                |
+| 02  | [TODO App](https://github.com/TS-Devs/250-js-projects/tree/main/src/Todo)                                 | [Live Demo](https://ts-devs.github.io/250-js-projects/src/Todo/index.html)                     |
+| 03  | [Number Guessing Game](https://github.com/TS-Devs/250-js-projects/tree/main/src/Number%20Guessing%20Game) | [Live Demo](https://ts-devs.github.io/250-js-projects/src/Number%20Guessing%20Game/index.html) |
+| 04  | [Color Flipper](https://github.com/TS-Devs/250-js-projects/tree/main/src/Color%20Flipper)                 | [Live Demo](https://ts-devs.github.io/250-js-projects/src/Color%20Flipper/index.html)          |
+| 05  | [Calculator](https://github.com/TS-Devs/250-js-projects/tree/main/src/Calculator)                         | [Live Demo](https://ts-devs.github.io/250-js-projects/src/Calculator/index.html)               |
 
-|  #  | Project                                                                                                                     | Live Demo                                                                         |
-| :-: | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| 01  | [Stopwatch](https://github.com/TS-Devs/250-js-projects/tree/main/src/Stopwatch)                             | [Live Demo](https://ts-devs.github.io/250-js-projects/src/Stopwatch/index.html)               |
-
-**NOTE ON PULL REQUESTS**:  I do appreciate people trying to make some things prettier or adding new projects, we are only accepting pull requests and looking at issues for bug fixes so that the code stays inline with the projects
+**NOTE ON PULL REQUESTS**: I do appreciate people trying to make some things prettier or adding new projects, we are only accepting pull requests and looking at issues for bug fixes so that the code stays inline with the projects
 
 ## License
 
 The MIT License
 
-Copyright (c) 2023 TS Devs 
+Copyright (c) 2023 TS Devs
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
